@@ -13,21 +13,28 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="20dp"
-        android:text="Ubicaciones"
+        android:layout_marginEnd="255dp"
+        android:text="@string/ubicaciones"
         android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView"
-        android:layout_width="353dp"
-        android:layout_height="444dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.mapbox.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="348dp"
+        android:layout_height="435dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:mapbox_cameraBearing="0.0"
+        app:mapbox_cameraPitch="0.0"
+        app:mapbox_cameraTargetLat="39.5"
+        app:mapbox_cameraTargetLng="-98.0"
+        app:mapbox_cameraZoom="2.0" />
 
     <TextView
         android:id="@+id/textView2"
@@ -36,7 +43,7 @@
         android:layout_marginStart="76dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="76dp"
-        android:text="Ubicacion Actual"
+        android:text="@string/ubicacion_actual"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mapView" />

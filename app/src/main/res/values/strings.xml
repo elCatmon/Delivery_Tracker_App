@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Delivery Tracker</string>
-    <string name="obtener">Obtener</string>
+    <string name="obtener">Obtener ruta</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiZWxjYXRzeSIsImEiOiJjbHhtNDBheGswNDV2MnFweXhzb2ltNnhxIn0.xlqkb5QcLxbpxEmpLw0lzQ</string>
+    <string name="ubicacion_actual">Ubicacion Actual</string>
+    <string name="ubicaciones">Ubicaciones</string>
 </resources>

@@ -18,6 +18,9 @@ import com.google.firebase.database.FirebaseDatabase
 import android.Manifest
 import android.util.Log
 import android.view.View
+import com.mapbox.geojson.Point
+import com.mapbox.maps.CameraOptions
+import com.mapbox.maps.MapView
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,10 +28,12 @@ class MainActivity : AppCompatActivity() {
     private lateinit var database: FirebaseDatabase
     private lateinit var myRef: DatabaseReference
     private lateinit var locationManager: LocationManager
-    private val LOCATION_PERMISSION_REQUEST_CODE = 100 // Define el códigode solicitud
+    private val LOCATION_PERMISSION_REQUEST_CODE = 100 // Define el códigode
+    private lateinit var mapView: MapView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
@@ -43,6 +48,17 @@ class MainActivity : AppCompatActivity() {
 
         locationManager = getSystemService(LOCATION_SERVICE) as LocationManager
         obtenerUbicacion()
+
+        mapView = MapView(this)
+        mapView.mapboxMap.setCamera(
+            CameraOptions.Builder()
+                .center(Point.fromLngLat(-98.0, 39.5))
+                .pitch(0.0)
+                .zoom(2.0)
+                .bearing(0.0)
+                .build()
+        )
+
     }
 
 

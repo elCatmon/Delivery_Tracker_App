@@ -52,4 +52,5 @@ dependencies {
     implementation("com.google.firebase:firebase-database")
     implementation("com.google.android.gms:play-services-location:21.0.1")
     implementation("com.google.firebase:firebase-database-ktx")
+    implementation("com.mapbox.maps:android:11.4.1")
 }
