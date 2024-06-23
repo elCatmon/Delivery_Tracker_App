@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Delivery Tracker</string>
-    <string name="obtener">Obtener ruta</string>
+    <string name="get_route">Get route</string>
     <string name="mapbox_access_token">pk.eyJ1IjoiZWxjYXRzeSIsImEiOiJjbHhtNDBheGswNDV2MnFweXhzb2ltNnhxIn0.xlqkb5QcLxbpxEmpLw0lzQ</string>
-    <string name="ubicacion_actual">Ubicacion Actual</string>
-    <string name="ubicaciones">Ubicaciones</string>
+    <string name="tracking_guide">Tracking guide:</string>
+    <string name="Title">Easy Shipping - delivery person</string>
+
 </resources>
