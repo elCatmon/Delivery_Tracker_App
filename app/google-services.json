@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "160645248398",
+    "project_id": "delivery-tracker-159a3",
+    "storage_bucket": "delivery-tracker-159a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160645248398:android:30a568dbdc45cb3555e0df",
+        "android_client_info": {
+          "package_name": "com.ceancof.deliverytracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbjI2vPQb0Ls_wk70tYd9EdSBjuh1zMuU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

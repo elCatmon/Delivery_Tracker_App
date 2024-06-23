@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Delivery Tracker</string>
+    <string name="obtener">Obtener</string>
 </resources>
